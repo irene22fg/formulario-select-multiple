@@ -1,0 +1,11 @@
+.container{
+    margin-bottom: 10px;
+}
+select{
+    width: 130px;
+    height: 123px;
+}
+
+span{
+    color: red;
+}

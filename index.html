@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Irene Figuereo Galán</title>
+</head>
+<body>
+    <h1>Envío de datos</h1>
+    <form  novalidate  action="https://www.w3schools.com/action_page.php" id="form" >
+        <fieldset> 
+            <legend>Realizar actividades en las Islas Canarias</legend>
+            <div class="container">
+                <input type="radio" name="actividad" id="se" value="SE" required>
+                <label for="se">Senderismo</label>
+                <input type="radio" name="actividad" id="sp" value="SP" required>
+                <label for="sp">Sol y playa</label>
+                <input type="radio" name="actividad" id="on" value="ON" required>
+                <label for="on">Ocio nocturno</label>
+                <input type="hidden" id="hidden1" value="" name="actividad">
+            </div>
+            <span id="span1"></span>
+            <div class="container">
+                <div>
+                    <label for="islas">Selecciona una o varias islas:</label>
+                </div>
+                <select id="islas" multiple required>
+                    <option value="GC">Gran Canaria</option>
+                    <option value="TF">Tenerife</option>
+                    <option value="GO">La Gomera</option>
+                    <option value="FV">Fuerteventura</option>
+                    <option value="LZ">Lanzarote</option>
+                    <option value="HI">El Hierro</option>
+                    <option value="LP">La Palma</option>
+                </select>
+                <input type="hidden" id="hidden2" value="" name="islas">
+            </div>
+            <span id="span2"></span>
+            <div class="container">
+                <div>
+                    <label for="horario">Elige fecha y hora para la atención personalizada sobre tu solicitud:</label>
+                </div>
+                <input type="datetime-local" id="horario" min="" required>
+                <input type="hidden" id="hidden3" value="" name="fecha-hora">
+            </div>
+            <span id="span3"></span>
+        </fieldset>
+        <input type="submit" value="Enviar datos al servidor" id="enviar">
+    </form>
+    <script src="./script.js"></script>
+</body>
+</html>
